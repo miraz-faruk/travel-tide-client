@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2'
 
 const AddTouristsSpot = () => {
 
@@ -21,6 +21,27 @@ const AddTouristsSpot = () => {
 
         const newSpot = { image, spotName, country, location, description, cost, seasonality, travelTime, visitors, userEmail, userName };
         console.log(newSpot);
+
+        // send data to the server
+        fetch('http://localhost:5001/add-tourist-spot', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newSpot)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'User Added Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                }
+            })
     }
     return (
         <div className="container mx-auto mt-10 bg-zinc-100 rounded-xl p-8">
