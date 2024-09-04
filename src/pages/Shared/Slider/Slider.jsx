@@ -41,7 +41,7 @@ const Slider = () => {
                         className={`absolute bottom-10 lg:bottom-32 left-8 lg:left-2/4 text-xl lg:text-4xl text-white font-bold bg-black bg-opacity-5 px-4 py-2 rounded ${activeIndex === 1 ? 'animate__animated animate__bounceInLeft' : ''
                             }`}
                     >
-                        Discover Bali's Sacred Beauty
+                        Discover Bali`s Sacred Beauty
                     </p>
                 </SwiperSlide>
                 <SwiperSlide>
