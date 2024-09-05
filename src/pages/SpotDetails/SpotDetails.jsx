@@ -24,8 +24,10 @@ const SpotDetails = () => {
         <div className="p-5">
             <h1 className="text-5xl font-bold text-purple-600 text-center mb-5">{spotName}</h1>
             <div className='md:flex gap-5'>
-                <img className="w-full md:w-2/3 max-h-screen mb-5" src={image} alt={spotName} />
-                <div className='space-y-3'>
+                <img className="w-full md:w-2/3 max-h-screen mb-5 rounded-2xl" src={image} alt={spotName} />
+                <div className='md:w-1/3 space-y-3 border-2 rounded-lg p-6'>
+                    <h2 className='text-2xl text-center font-semibold text-green-700'>Details about the spot</h2>
+                    <hr />
                     <p><strong>ID:</strong> {_id}</p>
                     <p><strong>Country:</strong> {country}</p>
                     <p><strong>Location:</strong> {location}</p>
