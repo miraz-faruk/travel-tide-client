@@ -54,7 +54,6 @@ const router = createBrowserRouter([
                 element: <PrivateRoutes>
                     <UpdateSpot></UpdateSpot>
                 </PrivateRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5001/add-tourists-spot/${params.id}`)
             }
         ]
     }
