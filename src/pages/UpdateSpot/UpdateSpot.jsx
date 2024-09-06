@@ -20,7 +20,7 @@ const UpdateSpot = () => {
     });
 
     useEffect(() => {
-        fetch(`http://localhost:5001/my-list/${id}`)
+        fetch(`https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/my-list/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 // console.log("Fetched Data:", data);
@@ -46,7 +46,7 @@ const UpdateSpot = () => {
 
     const handleUpdateSpot = (e) => {
         e.preventDefault();
-        fetch(`http://localhost:5001/my-list/${id}`, {
+        fetch(`https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/my-list/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

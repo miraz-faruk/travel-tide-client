@@ -7,7 +7,7 @@ const TouristsSpots = () => {
     const [spots, setSpots] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5001/add-tourists-spot")
+        fetch("https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/add-tourists-spot")
             .then(res => res.json())
             .then(data => {
                 console.log(data);

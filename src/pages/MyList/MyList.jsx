@@ -13,7 +13,7 @@ const MyList = () => {
     useEffect(() => {
         if (user && user.email) { // Ensure user email
             console.log(`Fetching spots for user: ${user.email}`);
-            fetch(`http://localhost:5001/my-list?email=${user.email}`)
+            fetch(`https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/my-list?email=${user.email}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Fetched spots:", data);
@@ -37,7 +37,7 @@ const MyList = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5001/add-tourists-spot/${id}`, {
+                fetch(`https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/add-tourists-spot/${id}`, {
                     method: 'DELETE',
                 })
                     .then((res) => res.json())
