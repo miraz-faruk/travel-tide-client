@@ -60,7 +60,7 @@ const router = createBrowserRouter([
                 path: "/countries/:countryName/spots",
                 element: <CountrySpots></CountrySpots>
             }
-
+            
         ]
     }
 ]);

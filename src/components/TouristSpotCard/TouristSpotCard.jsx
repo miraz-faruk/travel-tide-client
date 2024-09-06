@@ -6,7 +6,7 @@ const TouristSpotCard = ({ spot }) => {
     const { _id, spotName, country, location, description, cost, seasonality } = spot;
 
     const handleViewDetails = () => {
-        navigate(`/spot/${_id}`);
+        navigate(`/spot-details/${_id}`);
     };
 
     return (
@@ -16,7 +16,7 @@ const TouristSpotCard = ({ spot }) => {
                 <p><strong>Country:</strong> {country}</p>
                 <p><strong>Location:</strong> {location}</p>
                 <p><strong>Description:</strong> {description}</p>
-                <p><strong>Average Cost:</strong> ${cost}</p>
+                <p><strong>Average Cost:</strong> {cost}</p>
                 <p><strong>Seasonality:</strong> {seasonality}</p>
                 <button onClick={handleViewDetails} className="btn btn-outline btn-info mt-5">
                     View Details
