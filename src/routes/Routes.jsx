@@ -10,6 +10,7 @@ import MyList from "../pages/MyList/MyList";
 import SpotDetails from "../pages/SpotDetails/SpotDetails";
 import UpdateSpot from "../pages/UpdateSpot/UpdateSpot";
 import CountrySpots from "../pages/CountrySpots/CountrySpots";
+import About from "../pages/Shared/About/About";
 
 const router = createBrowserRouter([
     {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
             {
                 path: "/countries/:countryName/spots",
                 element: <CountrySpots></CountrySpots>
+            },
+            {
+                path: "/about",
+                element: <About></About>
             }
             
         ]
