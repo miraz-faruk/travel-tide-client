@@ -26,7 +26,7 @@ const TouristsSpot = ({ spot }) => {
                         <p className="text-gray-600"><span className="font-semibold text-black">Location: </span>{location}</p>
                         <p className="text-gray-600"><span className="font-semibold text-black">About: </span>{description}</p>
                         <p className="text-gray-600"><span className="font-semibold text-black">Total visitor per year: </span>{visitors}</p>
-                        <p className="text-gray-600"><span className="font-semibold text-black">Cost: </span>{cost}</p>
+                        <p className="text-gray-600"><span className="font-semibold text-black">Cost: $</span>{cost}</p>
                     </div>
                     <button onClick={handleViewDetails} className="btn btn-outline btn-info text-lg mt-5">View Details</button>
                 </div>

@@ -9,7 +9,7 @@ import AddTouristsSpot from "../pages/AddTouristsSpot/AddTouristsSpot";
 import MyList from "../pages/MyList/MyList";
 import SpotDetails from "../pages/SpotDetails/SpotDetails";
 import UpdateSpot from "../pages/UpdateSpot/UpdateSpot";
-import CountryDetails from "../pages/CountryDetails/CountryDetails";
+import CountrySpots from "../pages/CountrySpots/CountrySpots";
 
 const router = createBrowserRouter([
     {
@@ -57,9 +57,10 @@ const router = createBrowserRouter([
                 </PrivateRoutes>,
             },
             {
-                path: "/country/:countryName",
-                element: <CountryDetails></CountryDetails>
+                path: "/countries/:countryName/spots",
+                element: <CountrySpots></CountrySpots>
             }
+
         ]
     }
 ]);
