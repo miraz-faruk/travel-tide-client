@@ -15,7 +15,7 @@ const Countries = () => {
     })
     return (
         <div className="container mx-auto mt-10">
-            <h2 className="text-4xl font-semibold text-purple-700 text-center mb-10">Countries</h2>
+            <h2 className="text-4xl font-semibold text-purple-700 text-center mb-10">Countries in Southeast Asia</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {
                     countries.map(country => <Country key={country._id} country={country}></Country>)
