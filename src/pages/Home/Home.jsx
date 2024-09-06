@@ -1,5 +1,6 @@
 import ThemeChange from "../../components/ThemeChange/ThemeChange";
 import MagicPage from "../MagicPage/MagicPage";
+import Countries from "../Shared/Countries/Countries";
 import Slider from "../Shared/Slider/Slider";
 import TouristsSpots from "../Shared/TouristsSpots/TouristsSpots";
 
@@ -10,6 +11,7 @@ const Home = () => {
             <ThemeChange></ThemeChange>
             <Slider></Slider>
             <TouristsSpots></TouristsSpots>
+            <Countries></Countries>
             <MagicPage></MagicPage>
         </div>
     );
