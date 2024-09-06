@@ -40,7 +40,6 @@ const AllTouristsSpot = () => {
     return (
         <div className="container mx-auto py-8">
             <h2 className="text-3xl font-bold text-purple-600 text-center mb-6">All Tourist Spots</h2>
-
             <div className="flex justify-end items-center mb-4">
                 <label htmlFor="sort" className="mr-2 font-semibold">Sort by Cost:</label>
                 <select

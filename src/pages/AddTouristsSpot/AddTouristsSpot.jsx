@@ -48,7 +48,7 @@ const AddTouristsSpot = () => {
             <h2 className="text-3xl font-bold text-center mb-8 text-purple-700">Add Your Tourists Spot</h2>
             <form onSubmit={handleAddSpot}>
                 {/* Row 1 */}
-                <div className="flex gap-5">
+                <div className="md:flex gap-5">
                     <label className="form-control md:w-1/2">
                         <div className="label">
                             <span className="label-text text-lg font-medium">Image</span>
@@ -63,7 +63,7 @@ const AddTouristsSpot = () => {
                     </label>
                 </div>
                 {/* Row 2 */}
-                <div className="flex gap-5">
+                <div className="md:flex gap-5">
                     <label className="form-control md:w-1/2">
                         <div className="label">
                             <span className="label-text text-lg font-medium">Country Name</span>
@@ -87,7 +87,7 @@ const AddTouristsSpot = () => {
                     </label>
                 </div>
                 {/* Row 4 */}
-                <div className="flex gap-5">
+                <div className="md:flex gap-5">
                     <label className="form-control md:w-1/2">
                         <div className="label">
                             <span className="label-text text-lg font-medium">Average Cost</span>
@@ -102,7 +102,7 @@ const AddTouristsSpot = () => {
                     </label>
                 </div>
                 {/* Row 5 */}
-                <div className="flex gap-5">
+                <div className="md:flex gap-5">
                     <label className="form-control md:w-1/2">
                         <div className="label">
                             <span className="label-text text-lg font-medium">Travel Time</span>
@@ -117,7 +117,7 @@ const AddTouristsSpot = () => {
                     </label>
                 </div>
                 {/* Row 6 */}
-                <div className="flex gap-5">
+                <div className="md:flex gap-5">
                     <label className="form-control md:w-1/2">
                         <div className="label">
                             <span className="label-text text-lg font-medium">User Email</span>
