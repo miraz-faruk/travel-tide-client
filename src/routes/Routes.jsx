@@ -9,6 +9,7 @@ import AddTouristsSpot from "../pages/AddTouristsSpot/AddTouristsSpot";
 import MyList from "../pages/MyList/MyList";
 import SpotDetails from "../pages/SpotDetails/SpotDetails";
 import UpdateSpot from "../pages/UpdateSpot/UpdateSpot";
+import CountryDetails from "../pages/CountryDetails/CountryDetails";
 
 const router = createBrowserRouter([
     {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
                 element: <PrivateRoutes>
                     <UpdateSpot></UpdateSpot>
                 </PrivateRoutes>,
+            },
+            {
+                path: "/country/:countryName",
+                element: <CountryDetails></CountryDetails>
             }
         ]
     }
