@@ -6,7 +6,7 @@ const Countries = () => {
     const [countries, setCountries] = useState([]);
 
     useEffect(() => {
-        fetch('https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/countries')
+        fetch('https://travel-tide-server.vercel.app/countries')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -18,7 +18,7 @@ const Countries = () => {
             <h2 className="text-4xl font-semibold text-purple-700 text-center mb-10">Countries in Southeast Asia</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {
-                    countries.map(country => <Country key={country._id} country={country}></Country>)
+                    countries?.map(country => <Country key={country._id} country={country}></Country>)
                 }
             </div>
         </div>

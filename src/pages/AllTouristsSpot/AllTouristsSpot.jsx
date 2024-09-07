@@ -8,7 +8,7 @@ const AllTouristsSpot = () => {
 
     // Fetch all tourist spots from database
     useEffect(() => {
-        fetch("https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/add-tourists-spot")
+        fetch("https://travel-tide-server.vercel.app")
             .then(res => res.json())
             .then(data => {
                 setSpots(data);

@@ -37,7 +37,7 @@ const MyList = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/add-tourists-spot/${id}`, {
+                fetch(`https://travel-tide-server.vercel.app/${id}`, {
                     method: 'DELETE',
                 })
                     .then((res) => res.json())

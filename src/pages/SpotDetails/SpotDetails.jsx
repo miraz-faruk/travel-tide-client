@@ -6,7 +6,7 @@ const SpotDetails = () => {
     const [spot, setSpot] = useState(null);
 
     useEffect(() => {
-        fetch(`https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/add-tourists-spot/${id}`)
+        fetch(`https://travel-tide-server.vercel.app/${id}`)
             .then(res => res.json())
             .then(data => {
                 setSpot(data)

@@ -23,7 +23,7 @@ const AddTouristsSpot = () => {
         console.log(newSpot);
 
         // send data to the server
-        fetch('https://travel-tide-server-ce4rhk5sl-miraz-faruks-projects.vercel.app/add-tourists-spot', {
+        fetch('https://travel-tide-server.vercel.app', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
